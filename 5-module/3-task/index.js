@@ -15,11 +15,13 @@ function initCarousel() {
   });
 
   function changeSlide(direction) {
+    // Проверка, какая кнопка нажата
     if (direction === 'left') {
       activeSlideIndex--;
     } else if (direction === 'right') {
       activeSlideIndex++;
     }
+    // Проверка, какой слайд для реализации видимости кнопок
     if (activeSlideIndex !== 0) {
       buttonLeft.style.display = '';
     } else {
